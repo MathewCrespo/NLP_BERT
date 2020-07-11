@@ -1,0 +1,1 @@
+INFO:gluonnlp:19:28:33 Namespace(dataset_name='book_corpus_wiki_en_uncased', dropout=0.1, model_name='bert_12_768_12', model_parameters='.\\model_bert_CNSA_1.params', output_dir='./', seq_length=64, task='classification')

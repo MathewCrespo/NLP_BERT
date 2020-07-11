@@ -1,0 +1,1 @@
+INFO:gluonnlp:19:30:46 Namespace(dataset_name='wiki_cn_cased', dropout=0.1, model_name='bert_12_768_12', model_parameters='model_bert_CNSA_1.params', output_dir='./CNSA/', seq_length=64, task='classification')
