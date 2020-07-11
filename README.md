@@ -20,16 +20,14 @@
 
 ## Training Results
 
-$$\begin{array}{cccc}
-\text { dataset } & \text { best epoch } & \text { accuracy } & \text { time/per epoch } \\
-\hline \text { waimai_10k } & 1 & 0.9092 & 741.49 \mathrm{s} \\
-\hline \text { ChnSentiCorp } & 3 & 0.9392 & 1220.54 \mathrm{s} \\
-\hline \text { weibo_senti_100k } & 1 & 0.9789 & 11785.73 \mathrm{s} \\
-\hline \text { weibo2 } & 1 & 0.6212 & 36884.11 \mathrm{s} \\
-\hline
-\end{array}$$
 
 
+| dataset          | best epoch | accuracy | time/per epoch |
+| ---------------- | ---------- | -------- | -------------- |
+| waimai_10k       | 1          | 0.9092   | 741.49s        |
+| ChnSentiCorp     | 3          | 0.9392   | 1220.54s       |
+| weibo_senti_100k | 1          | 0.9789   | 11785.73s      |
+| weibo2           | 1          | 0.6212   | 36884.11s      |
 
 
 
