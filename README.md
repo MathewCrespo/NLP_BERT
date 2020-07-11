@@ -31,9 +31,15 @@ $$\begin{array}{cccc}
 
 
 
+
+
 ## Single Sentence analysis
 
-<img src="./inference.png" style="zoom:50%;" />
+<img src="https://github.com/MathewCrespo/NLP_BERT/inference.png" style="zoom:50%;" />
+
+
+
+
 
 - 精调后，利用export.py脚本导出params文件，得到json脚本；
 - 将json脚本和params权重一起输入inference.ipynb中
