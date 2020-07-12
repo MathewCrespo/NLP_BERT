@@ -33,7 +33,7 @@
 
 ## Single Sentence analysis
 
-<img src="https://github.com/MathewCrespo/NLP_BERT/inference.png" style="zoom:50%;" />
+<img src="./inference.png" style="zoom:50%;" />
 
 
 
