@@ -28,7 +28,7 @@ try:
     from .baidu_ernie_data import BaiduErnieXNLI, BaiduErnieLCQMC, BaiduErnieChnSentiCorp
 except ImportError:
     from baidu_ernie_data import BaiduErnieXNLI, BaiduErnieLCQMC, BaiduErnieChnSentiCorp
-from .CNSAData import CNSAData, WeiboData, Weibo2Data
+from .CNSAData import CNSAData, WeiboData, Weibo2Data, LCQMC
 
 
 class GlueTask(object):
@@ -389,7 +389,7 @@ class LCQMCTask(GlueTask):
         segment : str, default 'train'
             Dataset segments. Options are 'dev', 'test', 'train'
         """
-        return BaiduErnieLCQMC(segment)
+        return LCQMC(segment)
 
 class ChnSentiCorpTask(GlueTask):
     """The ChnSentiCorp task using the dataset released from Baidu
