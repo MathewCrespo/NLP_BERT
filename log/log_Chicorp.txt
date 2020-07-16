@@ -1,0 +1,209 @@
+python finetune_classifier.py --bert_model bert_12_768_12 --bert_dataset wiki_cn_cased --task_name ChnSentiCorp --batch_size 32 --seed 2 --lr 2e-5 --warmup_ratio 0.1 --epochs 5
+INFO:root:22:46:46 Namespace(accumulate=None, batch_size=32, bert_dataset='wiki_cn_cased', bert_model='bert_12_768_12', calib_mode='customize', deploy=False, dev_batch_size=8, dtype='float32', early_stop=None, epochs=5, epsilon=1e-06, gpu=None, log_interval=10, lr=2e-05, max_len=128, model_parameters=None, model_prefix=None, num_calib_batches=5, only_calibration=False, only_inference=False, optimizer='bertadam', output_dir='./output_dir', pretrained_bert_parameters=None, quantized_dtype='auto', round_to=None, seed=2, task_name='ChnSentiCorp', training_steps=None, warmup_ratio=0.1)
+INFO:root:22:46:47 processing dataset...
+INFO:root:22:46:50 Now we are doing BERT classification training on cpu(0)!
+INFO:root:22:46:50 training steps=1500
+INFO:root:22:47:43 [Epoch 1 Batch 10/304] loss=0.7920, lr=0.0000012, metrics:accuracy:0.4067
+INFO:root:22:48:17 [Epoch 1 Batch 20/304] loss=0.7601, lr=0.0000025, metrics:accuracy:0.4487
+INFO:root:22:48:59 [Epoch 1 Batch 30/304] loss=0.6470, lr=0.0000039, metrics:accuracy:0.5158
+INFO:root:22:49:27 [Epoch 1 Batch 40/304] loss=0.4231, lr=0.0000052, metrics:accuracy:0.6049
+INFO:root:22:50:13 [Epoch 1 Batch 50/304] loss=0.5524, lr=0.0000065, metrics:accuracy:0.6328
+INFO:root:22:50:53 [Epoch 1 Batch 60/304] loss=0.4137, lr=0.0000079, metrics:accuracy:0.6651
+INFO:root:22:51:42 [Epoch 1 Batch 70/304] loss=0.3740, lr=0.0000092, metrics:accuracy:0.6911
+INFO:root:22:52:23 [Epoch 1 Batch 80/304] loss=0.3026, lr=0.0000105, metrics:accuracy:0.7165
+INFO:root:22:53:11 [Epoch 1 Batch 90/304] loss=0.2302, lr=0.0000119, metrics:accuracy:0.7386
+INFO:root:22:54:02 [Epoch 1 Batch 100/304] loss=0.4075, lr=0.0000132, metrics:accuracy:0.7512
+INFO:root:22:54:41 [Epoch 1 Batch 110/304] loss=0.3128, lr=0.0000145, metrics:accuracy:0.7628
+INFO:root:22:55:34 [Epoch 1 Batch 120/304] loss=0.3338, lr=0.0000159, metrics:accuracy:0.7722
+INFO:root:22:56:19 [Epoch 1 Batch 130/304] loss=0.3195, lr=0.0000172, metrics:accuracy:0.7800
+INFO:root:22:56:59 [Epoch 1 Batch 140/304] loss=0.2769, lr=0.0000185, metrics:accuracy:0.7880
+INFO:root:22:57:38 [Epoch 1 Batch 150/304] loss=0.4047, lr=0.0000199, metrics:accuracy:0.7917
+INFO:root:22:58:13 [Epoch 1 Batch 160/304] loss=0.4183, lr=0.0000199, metrics:accuracy:0.7940
+INFO:root:22:58:52 [Epoch 1 Batch 170/304] loss=0.3909, lr=0.0000197, metrics:accuracy:0.7981
+INFO:root:22:59:29 [Epoch 1 Batch 180/304] loss=0.2200, lr=0.0000196, metrics:accuracy:0.8047
+INFO:root:23:00:00 [Epoch 1 Batch 190/304] loss=0.2722, lr=0.0000194, metrics:accuracy:0.8108
+INFO:root:23:00:49 [Epoch 1 Batch 200/304] loss=0.3536, lr=0.0000193, metrics:accuracy:0.8145
+INFO:root:23:01:35 [Epoch 1 Batch 210/304] loss=0.3232, lr=0.0000191, metrics:accuracy:0.8180
+INFO:root:23:02:11 [Epoch 1 Batch 220/304] loss=0.3271, lr=0.0000190, metrics:accuracy:0.8213
+INFO:root:23:02:42 [Epoch 1 Batch 230/304] loss=0.2869, lr=0.0000188, metrics:accuracy:0.8250
+INFO:root:23:03:22 [Epoch 1 Batch 240/304] loss=0.2815, lr=0.0000187, metrics:accuracy:0.8285
+INFO:root:23:04:14 [Epoch 1 Batch 250/304] loss=0.2857, lr=0.0000185, metrics:accuracy:0.8307
+INFO:root:23:05:01 [Epoch 1 Batch 260/304] loss=0.3185, lr=0.0000184, metrics:accuracy:0.8324
+INFO:root:23:05:37 [Epoch 1 Batch 270/304] loss=0.2260, lr=0.0000182, metrics:accuracy:0.8357
+INFO:root:23:06:21 [Epoch 1 Batch 280/304] loss=0.2328, lr=0.0000181, metrics:accuracy:0.8384
+INFO:root:23:07:09 [Epoch 1 Batch 290/304] loss=0.2893, lr=0.0000179, metrics:accuracy:0.8411
+INFO:root:23:07:42 [Epoch 1 Batch 300/304] loss=0.2597, lr=0.0000178, metrics:accuracy:0.8430
+INFO:root:23:08:04 Now we are doing evaluation on dev with cpu(0).
+INFO:root:23:08:09 [Batch 10/150] loss=0.1328, metrics:accuracy:0.9500
+INFO:root:23:08:13 [Batch 20/150] loss=0.2632, metrics:accuracy:0.9187
+INFO:root:23:08:17 [Batch 30/150] loss=0.2435, metrics:accuracy:0.9167
+INFO:root:23:08:22 [Batch 40/150] loss=0.2529, metrics:accuracy:0.9156
+INFO:root:23:08:26 [Batch 50/150] loss=0.4331, metrics:accuracy:0.8925
+INFO:root:23:08:30 [Batch 60/150] loss=0.1921, metrics:accuracy:0.8979
+INFO:root:23:08:34 [Batch 70/150] loss=0.2577, metrics:accuracy:0.8982
+INFO:root:23:08:38 [Batch 80/150] loss=0.2992, metrics:accuracy:0.8984
+INFO:root:23:08:42 [Batch 90/150] loss=0.2582, metrics:accuracy:0.9014
+INFO:root:23:08:47 [Batch 100/150] loss=0.1951, metrics:accuracy:0.9038
+INFO:root:23:08:51 [Batch 110/150] loss=0.2650, metrics:accuracy:0.9011
+INFO:root:23:08:55 [Batch 120/150] loss=0.2411, metrics:accuracy:0.9021
+INFO:root:23:08:59 [Batch 130/150] loss=0.1625, metrics:accuracy:0.9058
+INFO:root:23:09:03 [Batch 140/150] loss=0.2012, metrics:accuracy:0.9071
+INFO:root:23:09:08 [Batch 150/150] loss=0.2454, metrics:accuracy:0.9075
+INFO:root:23:09:08 validation metrics:accuracy:0.9075
+INFO:root:23:09:08 Time cost=63.56s, throughput=18.88 samples/s
+INFO:root:23:09:12 params saved in: ./output_dir/model_bert_ChnSentiCorp_0.params
+INFO:root:23:09:12 Time cost=1341.43s
+INFO:root:23:09:51 [Epoch 2 Batch 10/304] loss=0.2307, lr=0.0000176, metrics:accuracy:0.9153
+INFO:root:23:10:33 [Epoch 2 Batch 20/304] loss=0.1908, lr=0.0000174, metrics:accuracy:0.9317
+INFO:root:23:11:21 [Epoch 2 Batch 30/304] loss=0.2250, lr=0.0000173, metrics:accuracy:0.9326
+INFO:root:23:12:07 [Epoch 2 Batch 40/304] loss=0.2688, lr=0.0000171, metrics:accuracy:0.9267
+INFO:root:23:12:47 [Epoch 2 Batch 50/304] loss=0.2147, lr=0.0000170, metrics:accuracy:0.9262
+INFO:root:23:13:31 [Epoch 2 Batch 60/304] loss=0.1586, lr=0.0000168, metrics:accuracy:0.9308
+INFO:root:23:14:02 [Epoch 2 Batch 70/304] loss=0.2277, lr=0.0000167, metrics:accuracy:0.9295
+INFO:root:23:14:48 [Epoch 2 Batch 80/304] loss=0.1485, lr=0.0000165, metrics:accuracy:0.9325
+INFO:root:23:15:27 [Epoch 2 Batch 90/304] loss=0.1921, lr=0.0000164, metrics:accuracy:0.9338
+INFO:root:23:16:11 [Epoch 2 Batch 100/304] loss=0.1977, lr=0.0000163, metrics:accuracy:0.9345
+INFO:root:23:16:47 [Epoch 2 Batch 110/304] loss=0.1748, lr=0.0000161, metrics:accuracy:0.9350
+INFO:root:23:17:18 [Epoch 2 Batch 120/304] loss=0.1776, lr=0.0000160, metrics:accuracy:0.9362
+INFO:root:23:17:52 [Epoch 2 Batch 130/304] loss=0.1407, lr=0.0000158, metrics:accuracy:0.9373
+INFO:root:23:18:30 [Epoch 2 Batch 140/304] loss=0.2102, lr=0.0000157, metrics:accuracy:0.9376
+INFO:root:23:19:08 [Epoch 2 Batch 150/304] loss=0.2252, lr=0.0000155, metrics:accuracy:0.9364
+INFO:root:23:19:51 [Epoch 2 Batch 160/304] loss=0.2050, lr=0.0000154, metrics:accuracy:0.9364
+INFO:root:23:20:34 [Epoch 2 Batch 170/304] loss=0.1631, lr=0.0000152, metrics:accuracy:0.9368
+INFO:root:23:21:21 [Epoch 2 Batch 180/304] loss=0.1619, lr=0.0000151, metrics:accuracy:0.9381
+INFO:root:23:21:54 [Epoch 2 Batch 190/304] loss=0.2071, lr=0.0000149, metrics:accuracy:0.9382
+INFO:root:23:22:35 [Epoch 2 Batch 200/304] loss=0.1267, lr=0.0000148, metrics:accuracy:0.9393
+INFO:root:23:23:20 [Epoch 2 Batch 210/304] loss=0.0952, lr=0.0000146, metrics:accuracy:0.9410
+INFO:root:23:23:59 [Epoch 2 Batch 220/304] loss=0.2593, lr=0.0000145, metrics:accuracy:0.9407
+INFO:root:23:24:40 [Epoch 2 Batch 230/304] loss=0.2345, lr=0.0000143, metrics:accuracy:0.9400
+INFO:root:23:25:24 [Epoch 2 Batch 240/304] loss=0.1657, lr=0.0000142, metrics:accuracy:0.9404
+INFO:root:23:26:12 [Epoch 2 Batch 250/304] loss=0.1115, lr=0.0000140, metrics:accuracy:0.9416
+INFO:root:23:26:54 [Epoch 2 Batch 260/304] loss=0.1337, lr=0.0000139, metrics:accuracy:0.9419
+INFO:root:23:27:34 [Epoch 2 Batch 270/304] loss=0.1998, lr=0.0000137, metrics:accuracy:0.9414
+
+INFO:root:23:49:23 [Epoch 3 Batch 270/304] loss=0.0987, lr=0.0000092, metrics:accuracy:0.9709
+INFO:root:23:50:14 [Epoch 3 Batch 280/304] loss=0.0555, lr=0.0000091, metrics:accuracy:0.9712
+INFO:root:23:50:49 [Epoch 3 Batch 290/304] loss=0.0818, lr=0.0000089, metrics:accuracy:0.9714
+INFO:root:23:51:31 [Epoch 3 Batch 300/304] loss=0.0926, lr=0.0000088, metrics:accuracy:0.9714
+INFO:root:23:51:48 Now we are doing evaluation on dev with cpu(0).
+INFO:root:23:51:52 [Batch 10/150] loss=0.0751, metrics:accuracy:0.9875
+INFO:root:23:51:56 [Batch 20/150] loss=0.2141, metrics:accuracy:0.9625
+INFO:root:23:52:00 [Batch 30/150] loss=0.2895, metrics:accuracy:0.9500
+INFO:root:23:52:05 [Batch 40/150] loss=0.2491, metrics:accuracy:0.9437
+INFO:root:23:52:09 [Batch 50/150] loss=0.3651, metrics:accuracy:0.9350
+INFO:root:23:52:13 [Batch 60/150] loss=0.2302, metrics:accuracy:0.9333
+INFO:root:23:52:17 [Batch 70/150] loss=0.2763, metrics:accuracy:0.9357
+INFO:root:23:52:21 [Batch 80/150] loss=0.3369, metrics:accuracy:0.9359
+INFO:root:23:52:25 [Batch 90/150] loss=0.2633, metrics:accuracy:0.9347
+INFO:root:23:52:29 [Batch 100/150] loss=0.2546, metrics:accuracy:0.9350
+INFO:root:23:52:33 [Batch 110/150] loss=0.3262, metrics:accuracy:0.9341
+INFO:root:23:52:38 [Batch 120/150] loss=0.2200, metrics:accuracy:0.9344
+INFO:root:23:52:42 [Batch 130/150] loss=0.2963, metrics:accuracy:0.9346
+INFO:root:23:52:46 [Batch 140/150] loss=0.3224, metrics:accuracy:0.9330
+INFO:root:23:52:51 [Batch 150/150] loss=0.4205, metrics:accuracy:0.9317
+INFO:root:23:52:51 validation metrics:accuracy:0.9317
+INFO:root:23:52:51 Time cost=62.89s, throughput=19.08 samples/s
+INFO:root:23:52:55 params saved in: ./output_dir/model_bert_ChnSentiCorp_2.params
+INFO:root:23:52:55 Time cost=1310.35s
+INFO:root:23:53:33 [Epoch 4 Batch 10/304] loss=0.0500, lr=0.0000086, metrics:accuracy:0.9906
+INFO:root:23:54:18 [Epoch 4 Batch 20/304] loss=0.0299, lr=0.0000084, metrics:accuracy:0.9906
+INFO:root:23:55:01 [Epoch 4 Batch 30/304] loss=0.0535, lr=0.0000083, metrics:accuracy:0.9906
+INFO:root:23:55:42 [Epoch 4 Batch 40/304] loss=0.0163, lr=0.0000081, metrics:accuracy:0.9921
+INFO:root:23:56:24 [Epoch 4 Batch 50/304] loss=0.0482, lr=0.0000080, metrics:accuracy:0.9918
+INFO:root:23:57:02 [Epoch 4 Batch 60/304] loss=0.0357, lr=0.0000078, metrics:accuracy:0.9921
+INFO:root:23:57:40 [Epoch 4 Batch 70/304] loss=0.0907, lr=0.0000077, metrics:accuracy:0.9892
+INFO:root:23:58:16 [Epoch 4 Batch 80/304] loss=0.0404, lr=0.0000075, metrics:accuracy:0.9889
+INFO:root:23:59:04 [Epoch 4 Batch 90/304] loss=0.1131, lr=0.0000074, metrics:accuracy:0.9874
+INFO:root:23:59:46 [Epoch 4 Batch 100/304] loss=0.0660, lr=0.0000072, metrics:accuracy:0.9871
+INFO:root:00:00:22 [Epoch 4 Batch 110/304] loss=0.0147, lr=0.0000071, metrics:accuracy:0.9876
+INFO:root:00:00:57 [Epoch 4 Batch 120/304] loss=0.0196, lr=0.0000069, metrics:accuracy:0.9881
+INFO:root:00:01:38 [Epoch 4 Batch 130/304] loss=0.0767, lr=0.0000068, metrics:accuracy:0.9876
+INFO:root:00:02:23 [Epoch 4 Batch 140/304] loss=0.0554, lr=0.0000067, metrics:accuracy:0.9869
+INFO:root:00:03:06 [Epoch 4 Batch 150/304] loss=0.0339, lr=0.0000065, metrics:accuracy:0.9872
+INFO:root:00:03:42 [Epoch 4 Batch 160/304] loss=0.0516, lr=0.0000064, metrics:accuracy:0.9872
+INFO:root:00:04:28 [Epoch 4 Batch 170/304] loss=0.0192, lr=0.0000062, metrics:accuracy:0.9878
+INFO:root:00:05:08 [Epoch 4 Batch 180/304] loss=0.0568, lr=0.0000061, metrics:accuracy:0.9878
+INFO:root:00:05:42 [Epoch 4 Batch 190/304] loss=0.0475, lr=0.0000059, metrics:accuracy:0.9878
+INFO:root:00:06:22 [Epoch 4 Batch 200/304] loss=0.0497, lr=0.0000058, metrics:accuracy:0.9876
+INFO:root:00:07:01 [Epoch 4 Batch 210/304] loss=0.1014, lr=0.0000056, metrics:accuracy:0.9873
+INFO:root:00:07:40 [Epoch 4 Batch 220/304] loss=0.0399, lr=0.0000055, metrics:accuracy:0.9875
+INFO:root:00:08:28 [Epoch 4 Batch 230/304] loss=0.0298, lr=0.0000053, metrics:accuracy:0.9876
+INFO:root:00:09:10 [Epoch 4 Batch 240/304] loss=0.0480, lr=0.0000052, metrics:accuracy:0.9877
+INFO:root:00:09:45 [Epoch 4 Batch 250/304] loss=0.0485, lr=0.0000050, metrics:accuracy:0.9878
+INFO:root:00:10:20 [Epoch 4 Batch 260/304] loss=0.0669, lr=0.0000049, metrics:accuracy:0.9874
+INFO:root:00:11:12 [Epoch 4 Batch 270/304] loss=0.0088, lr=0.0000047, metrics:accuracy:0.9878
+INFO:root:00:11:47 [Epoch 4 Batch 280/304] loss=0.0526, lr=0.0000046, metrics:accuracy:0.9879
+INFO:root:00:12:25 [Epoch 4 Batch 290/304] loss=0.0717, lr=0.0000044, metrics:accuracy:0.9879
+INFO:root:00:13:12 [Epoch 4 Batch 300/304] loss=0.1137, lr=0.0000043, metrics:accuracy:0.9875
+INFO:root:00:13:25 Now we are doing evaluation on dev with cpu(0).
+INFO:root:00:13:29 [Batch 10/150] loss=0.0708, metrics:accuracy:0.9875
+INFO:root:00:13:33 [Batch 20/150] loss=0.2789, metrics:accuracy:0.9563
+INFO:root:00:13:37 [Batch 30/150] loss=0.2392, metrics:accuracy:0.9500
+INFO:root:00:13:42 [Batch 40/150] loss=0.2976, metrics:accuracy:0.9469
+INFO:root:00:13:45 [Batch 50/150] loss=0.3511, metrics:accuracy:0.9450
+INFO:root:00:13:49 [Batch 60/150] loss=0.1816, metrics:accuracy:0.9458
+INFO:root:00:13:54 [Batch 70/150] loss=0.2779, metrics:accuracy:0.9464
+INFO:root:00:13:58 [Batch 80/150] loss=0.3836, metrics:accuracy:0.9437
+INFO:root:00:14:02 [Batch 90/150] loss=0.2196, metrics:accuracy:0.9458
+INFO:root:00:14:06 [Batch 100/150] loss=0.2776, metrics:accuracy:0.9463
+INFO:root:00:14:10 [Batch 110/150] loss=0.3316, metrics:accuracy:0.9455
+INFO:root:00:14:14 [Batch 120/150] loss=0.1753, metrics:accuracy:0.9458
+INFO:root:00:14:18 [Batch 130/150] loss=0.2867, metrics:accuracy:0.9433
+INFO:root:00:14:22 [Batch 140/150] loss=0.3551, metrics:accuracy:0.9411
+INFO:root:00:14:26 [Batch 150/150] loss=0.4397, metrics:accuracy:0.9392
+INFO:root:00:14:26 validation metrics:accuracy:0.9392
+INFO:root:00:14:26 Time cost=61.64s, throughput=19.47 samples/s
+INFO:root:00:14:30 params saved in: ./output_dir/model_bert_ChnSentiCorp_3.params
+INFO:root:00:14:30 Time cost=1295.69s
+INFO:root:00:15:13 [Epoch 5 Batch 10/304] loss=0.0231, lr=0.0000041, metrics:accuracy:0.9938
+INFO:root:00:15:51 [Epoch 5 Batch 20/304] loss=0.0377, lr=0.0000039, metrics:accuracy:0.9937
+INFO:root:00:16:36 [Epoch 5 Batch 30/304] loss=0.0166, lr=0.0000038, metrics:accuracy:0.9947
+INFO:root:00:17:24 [Epoch 5 Batch 40/304] loss=0.0637, lr=0.0000036, metrics:accuracy:0.9929
+INFO:root:00:18:02 [Epoch 5 Batch 50/304] loss=0.0192, lr=0.0000035, metrics:accuracy:0.9936
+INFO:root:00:18:41 [Epoch 5 Batch 60/304] loss=0.0317, lr=0.0000033, metrics:accuracy:0.9931
+INFO:root:00:19:22 [Epoch 5 Batch 70/304] loss=0.0215, lr=0.0000032, metrics:accuracy:0.9932
+INFO:root:00:20:04 [Epoch 5 Batch 80/304] loss=0.0596, lr=0.0000030, metrics:accuracy:0.9925
+INFO:root:00:20:49 [Epoch 5 Batch 90/304] loss=0.0280, lr=0.0000029, metrics:accuracy:0.9925
+INFO:root:00:21:35 [Epoch 5 Batch 100/304] loss=0.0080, lr=0.0000027, metrics:accuracy:0.9930
+INFO:root:00:22:11 [Epoch 5 Batch 110/304] loss=0.0223, lr=0.0000026, metrics:accuracy:0.9930
+INFO:root:00:22:58 [Epoch 5 Batch 120/304] loss=0.0323, lr=0.0000024, metrics:accuracy:0.9931
+INFO:root:00:23:32 [Epoch 5 Batch 130/304] loss=0.0233, lr=0.0000023, metrics:accuracy:0.9934
+INFO:root:00:24:12 [Epoch 5 Batch 140/304] loss=0.0224, lr=0.0000021, metrics:accuracy:0.9934
+INFO:root:00:24:46 [Epoch 5 Batch 150/304] loss=0.0506, lr=0.0000020, metrics:accuracy:0.9932
+INFO:root:00:25:27 [Epoch 5 Batch 160/304] loss=0.0202, lr=0.0000019, metrics:accuracy:0.9935
+INFO:root:00:26:15 [Epoch 5 Batch 170/304] loss=0.0146, lr=0.0000017, metrics:accuracy:0.9937
+INFO:root:00:27:00 [Epoch 5 Batch 180/304] loss=0.0614, lr=0.0000016, metrics:accuracy:0.9933
+INFO:root:00:27:31 [Epoch 5 Batch 190/304] loss=0.0179, lr=0.0000014, metrics:accuracy:0.9935
+INFO:root:00:28:12 [Epoch 5 Batch 200/304] loss=0.0149, lr=0.0000013, metrics:accuracy:0.9933
+INFO:root:00:28:49 [Epoch 5 Batch 210/304] loss=0.0458, lr=0.0000011, metrics:accuracy:0.9931
+INFO:root:00:29:38 [Epoch 5 Batch 220/304] loss=0.0286, lr=0.0000010, metrics:accuracy:0.9929
+INFO:root:00:30:14 [Epoch 5 Batch 230/304] loss=0.0478, lr=0.0000008, metrics:accuracy:0.9927
+INFO:root:00:30:59 [Epoch 5 Batch 240/304] loss=0.0166, lr=0.0000007, metrics:accuracy:0.9926
+INFO:root:00:31:43 [Epoch 5 Batch 250/304] loss=0.0190, lr=0.0000005, metrics:accuracy:0.9928
+INFO:root:00:32:16 [Epoch 5 Batch 260/304] loss=0.0480, lr=0.0000004, metrics:accuracy:0.9926
+INFO:root:00:32:45 [Epoch 5 Batch 270/304] loss=0.0069, lr=0.0000002, metrics:accuracy:0.9927
+INFO:root:00:33:27 [Epoch 5 Batch 280/304] loss=0.0559, lr=0.0000001, metrics:accuracy:0.9925
+INFO:root:00:33:43 Finish training step: 1500
+INFO:root:00:33:43 Now we are doing evaluation on dev with cpu(0).
+INFO:root:00:33:47 [Batch 10/150] loss=0.0780, metrics:accuracy:0.9875
+INFO:root:00:33:51 [Batch 20/150] loss=0.2677, metrics:accuracy:0.9688
+INFO:root:00:33:56 [Batch 30/150] loss=0.2880, metrics:accuracy:0.9542
+INFO:root:00:34:00 [Batch 40/150] loss=0.3336, metrics:accuracy:0.9469
+INFO:root:00:34:04 [Batch 50/150] loss=0.3794, metrics:accuracy:0.9450
+INFO:root:00:34:08 [Batch 60/150] loss=0.2030, metrics:accuracy:0.9437
+INFO:root:00:34:12 [Batch 70/150] loss=0.2961, metrics:accuracy:0.9446
+INFO:root:00:34:17 [Batch 80/150] loss=0.4174, metrics:accuracy:0.9422
+INFO:root:00:34:21 [Batch 90/150] loss=0.2265, metrics:accuracy:0.9444
+INFO:root:00:34:25 [Batch 100/150] loss=0.2847, metrics:accuracy:0.9450
+INFO:root:00:34:30 [Batch 110/150] loss=0.3203, metrics:accuracy:0.9443
+INFO:root:00:34:34 [Batch 120/150] loss=0.2059, metrics:accuracy:0.9437
+INFO:root:00:34:38 [Batch 130/150] loss=0.2914, metrics:accuracy:0.9423
+INFO:root:00:34:43 [Batch 140/150] loss=0.4083, metrics:accuracy:0.9402
+INFO:root:00:34:47 [Batch 150/150] loss=0.4512, metrics:accuracy:0.9383
+INFO:root:00:34:47 validation metrics:accuracy:0.9383
+INFO:root:00:34:47 Time cost=64.18s, throughput=18.70 samples/s
+INFO:root:00:34:51 params saved in: ./output_dir/model_bert_ChnSentiCorp_4.params
+INFO:root:00:34:51 Time cost=1220.54s
+INFO:root:00:34:55 Best model at epoch 3. Validation metrics:accuracy:0.9392
+INFO:root:00:34:55 Now we are doing testing on test with cpu(0).
+INFO:root:00:36:00 Time cost=65.17s, throughput=18.41 samples/s
